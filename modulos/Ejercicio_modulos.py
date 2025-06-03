@@ -47,10 +47,12 @@ def checkPassword(inpPassword):
         return "La contraseña debe contener al menos un carácter que no sea ni letra ni número"
     elif all(isupper(inpPassword)) == True:
         return "La contraseña no es segura"
-    for i in inpPassword:
-        if inpPassword[i] == " ":
-            print("La contraseña no puede contener espacios en blanco")
-            break
+    elif " " in inpPassword:
+        return "La contraseña no puede contener espacios en blanco"
+    # for i in inpPassword:
+    #     if inpPassword[i] == " ":
+    #         print("La contraseña no puede contener espacios en blanco")
+    #         break
 print(checkPassword(Prueba))
         
 
