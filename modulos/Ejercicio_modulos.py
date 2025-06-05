@@ -49,9 +49,12 @@ def checkPassword(inpPassword):
         return "La contraseña no es segura"
     elif " " in inpPassword:
         return "La contraseña no puede contener espacios en blanco"
+    
     # for i in inpPassword:
+    
     #     if inpPassword[i] == " ":
     #         print("La contraseña no puede contener espacios en blanco")
+    
     #         break
 print(checkPassword(Prueba))
         
